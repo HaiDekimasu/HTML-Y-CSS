@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div{
+    margin-top:50px;
+    text-align: center;
+}
+#boton{
+    font-family: fantasy;
+}
+#boton::before{
+    content: "Pasa por encima";
+}
+.boton:hover{
+background: green;
+color: white;
+}
+.boton::before{
+    display:block;
+}
+
+.boton:active::after{
+    content: "¡Hecho!";
+}
+.boton:active:before{
+    display:none;
+}
